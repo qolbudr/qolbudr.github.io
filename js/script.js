@@ -3,10 +3,10 @@ $(document).ready(function() {
 		var scroll = $(this).scrollTop();
 	    if(scroll > 691) {
 	    	$(".home-navbar").addClass("colorize");
-	    	$(".arrow").hide();
+	    	$(".arrow,.info").hide();
 	    } else if (scroll < 691) {
 	    	$(".home-navbar").removeClass("colorize");
-	    	$(".arrow").show();
+	    	$(".arrow,.info").show();
 	    }
 	});
 

@@ -179,7 +179,7 @@
 .form-control,.form-control:focus {
 	background-color: var(--transparent-green);
 	color: var(--font-color);
-	padding: 12px 15px;
+	padding: 25px 15px;
 	outline: none;
 	border: none;
 	border-radius: 0;
@@ -241,7 +241,7 @@
 	color: white;
 }
 
-.light-theme .colorize a, .light-theme .colorize h5 {
+.light-theme .colorize a, .light-theme .colorize h5, .light-theme .colorize p {
 	color: var(--font-color);
 }
 
