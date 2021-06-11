@@ -176,6 +176,10 @@
 	border-radius: 0;
 }
 
+.btn-send:hover,.btn-send:focus {
+	color: white;
+}
+
 .form-control,.form-control:focus {
 	background-color: var(--transparent-green);
 	color: var(--font-color);

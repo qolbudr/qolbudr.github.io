@@ -103,4 +103,22 @@ $(document).ready(function() {
 	$(".close-menu").click(function() {
 		$(".mobile-menu").css({"visibility": "hidden", "opacity": "0"});
 	})
+
+	$("#sendEmail").on('submit', function(e) {
+		$(".btn-send").prop('disabled', true);
+		e.preventDefault();
+		$.ajax({
+			url: "https://send-email-to-qolbu.herokuapp.com/send.php",
+			type: "POST",
+			data: $('#sendEmail').serialize(),
+			success: function(result) {
+				$(".btn-send").prop('disabled', false);
+				if(result.status == 200) {
+					alertify.success('Mail has been sent!');
+				} else {
+					alertify.error(`Error ${result.message}`);
+				}
+			}
+		})
+	})
 });
