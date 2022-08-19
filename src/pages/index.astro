@@ -5,6 +5,7 @@ import Contact from '../components/Contact.astro';
 import Navbar from '../components/Navbar.astro';
 import Portfolio from '../components/Portfolio.astro';
 import HorizontalBlog from '../components/HorizontalBlog.astro';
+import Quotes from '../components/section/Quotes.jsx'
 ---
 
 <Layout title="qolbudr | Qolbu Dzikru Portofolio - Mobile and Web Developer">
@@ -60,18 +61,7 @@ import HorizontalBlog from '../components/HorizontalBlog.astro';
 				</div>
 			</div>
 		</div>
-		<div class="mb-10 py-5 px-5 md:px-16 lg:px-28">
-			<div class="bg-stone-900 p-10 md:py-24 md:p-16 text-white">
-				<div class="w-full flex items-center justify-center relative">
-					<div class="w-full md:w-1/2">
-						<h1 class="leading-10 font-extralight text-xl">❝Jangan berhenti untuk melangkah, apalagi saat melintas sendirian di kuburan pada malam hari.❞</h1>
-						<div class="flex items-center mt-10">
-							<h2 class="text-green-500"> - Someone Somewhere</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<Quotes client:visible/>
 		<div class="mb-10 py-5 px-5 md:px-16 lg:px-28">
 			<h1 class="text-4xl leading-tight">Someone say you need to <br> attach your <strong>Resume</strong> to <br> <strong>attract</strong> customer</h1>
 			<div class="mt-7 inline-flex relative">
