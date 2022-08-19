@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Contact from '../components/Contact.astro';
 import Navbar from '../components/Navbar.astro';
 ---
 
@@ -69,7 +70,7 @@ import Navbar from '../components/Navbar.astro';
 				</div>
 			</div>
 		</div>
-		<div class="mb-16 py-5 px-5 md:px-16 xl:px-28">
+		<div class="mb-10 py-5 px-5 md:px-16 xl:px-28">
 			<h1 class="text-4xl leading-tight">Someone say you need to <br> attach your <strong>Resume</strong> to <br> <strong>attract</strong> customer</h1>
 			<div class="mt-7 inline-flex relative">
 				<h3 class="text-xl font-bold">So here is my resume</h3>
@@ -141,6 +142,20 @@ import Navbar from '../components/Navbar.astro';
 							</ul>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mb-10 py-5 px-5 md:px-16 xl:px-28">
+			<div class="bg-slate-200 py-10 px-10 md:py-10 md:px-20 md:pb-36">
+				<div class="flex justify-between items-center mb-5">
+					<h6 class="text-md font-medium">What i do ? <i class="lnr lnr-arrow-down ml-1 text-green-500 font-bold"></i></h6>
+					<Contact/>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					<Card title="1. Web Development" description="Create beautifull website that fit your needs. supported by many libraries that usefull for operation."/>
+					<Card title="2. Mobile Development" description="Create beautifull mobile native apps as your expectation. Give me your design and workflow and rock it!"/>
+					<Card title="3. Cloud Computing" description="Have a virtual server windows/linux but doesn't know how to use it? let's talk and serve your server"/>
+					<Card title="4. Other" description="I dont know why you contact me if there is no reason and no problem you can contact me anytime haha :)"/>
 				</div>
 			</div>
 		</div>
