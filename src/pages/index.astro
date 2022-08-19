@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Contact from '../components/Contact.astro';
 import Navbar from '../components/Navbar.astro';
+import Portfolio from '../components/Portfolio.astro';
+import HorizontalBlog from '../components/HorizontalBlog.astro';
 ---
 
 <Layout title="qolbudr | Qolbu Dzikru Portofolio - Mobile and Web Developer">
@@ -145,17 +147,65 @@ import Navbar from '../components/Navbar.astro';
 				</div>
 			</div>
 		</div>
-		<div class="mb-10 py-5 px-5 md:px-16 xl:px-28">
-			<div class="bg-slate-200 py-10 px-10 md:py-10 md:px-20 md:pb-36">
+		<div class="pt-5 px-5 md:px-16 xl:px-28">
+			<div class="bg-slate-200 py-10 px-10 md:py-16 md:px-20 md:pb-36">
 				<div class="flex justify-between items-center mb-5">
 					<h6 class="text-md font-medium">What i do ? <i class="lnr lnr-arrow-down ml-1 text-green-500 font-bold"></i></h6>
 					<Contact/>
 				</div>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-7">
 					<Card title="1. Web Development" description="Create beautifull website that fit your needs. supported by many libraries that usefull for operation."/>
 					<Card title="2. Mobile Development" description="Create beautifull mobile native apps as your expectation. Give me your design and workflow and rock it!"/>
 					<Card title="3. Cloud Computing" description="Have a virtual server windows/linux but doesn't know how to use it? let's talk and serve your server"/>
 					<Card title="4. Other" description="I dont know why you contact me if there is no reason and no problem you can contact me anytime haha :)"/>
+				</div>
+			</div>
+		</div>
+		<div class="mb-10 px-5 md:px-16 xl:px-28">
+			<div class="py-10 px-10 md:py-16 md:px-20 md:pb-36 border border-slate-300 ">
+				<div class="flex justify-between items-center mb-5">
+					<h6 class="text-md font-medium">Some of My Recent Projects <i class="lnr lnr-arrow-down ml-1 text-green-500 font-bold"></i></h6>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+					<Portfolio/>
+					<Portfolio/>
+					<Portfolio/>
+					<Portfolio/>
+				</div>
+			</div>
+		</div>
+		<div class="mb-10 py-5 px-5 md:px-16 xl:px-28">
+			<div class="inline-flex relative">
+				<h1 class="text-4xl leading-tight">Wanna <br> read <strong>Something ?</strong></h1>
+				<div class="absolute w-100 -bottom-5 left-0 right-0">
+					<svg viewBox="0 0 859 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1.00001 19C0.600015 12.6 21.5 11.3334 32 11.5C135.833 8.83336 361.9 3.00001 435.5 1.00001C527.5 -1.49999 826.5 10.5 847.5 11C864.3 11.4 858.5 15.8333 853.5 18H833C745 15.8333 551.8 11.5 483 11.5C397 11.5 61.5 26.5 32 29C2.50003 31.5 1.50001 27 1.00001 19Z" fill="#22C55E"/>
+					</svg>
+				</div>
+			</div>
+			<div class="flex flex-col md:flex-row flex-basis items-start justify-between mt-20 gap-20">
+				<div class="basis-full md:basis-1/2">
+					<img src="me.jpg" style="height: 300px" class="w-full"/>
+					<div class="blog-details mt-3">
+						<div class="flex mb-3 items-center gap-2">
+							<div class="bg-green-500 text-white text-sm p-1 rounded-sm">Technology</div>
+							<h5 class="text-sm">• 4min</h5>
+						</div>
+						<h3 class="text-3xl mb-3 font-semibold">M1.00001 19C0.600015 12.6 21.5 11.3334 32 11.5C135.833?</h3>
+						<h5 class="text-lg mb-3">Have a virtual server windows/linux but doesn't know how to use it? let's talk and serve your server</h5>
+						<div class="flex items-center gap-2">
+							<div class="w-10 h-10 border border-green-500 rounded-full flex items-center justify-center">
+								<i class="ti ti-user"></i>
+							</div>
+							<h5 class="text-lg">qolbudr</h5>
+						</div>
+					</div>
+				</div>
+				<div class="basis-full md:basis-1/2">
+					<HorizontalBlog/>
+					<HorizontalBlog/>
+					<HorizontalBlog/>
+					<HorizontalBlog/>
 				</div>
 			</div>
 		</div>
