@@ -3,11 +3,9 @@ import CardPortfolio from './CardPortfolio'
 import CardPortfolioSkeleton from './CardPortfolioSkeleton'
 import { app } from "../../utils/firebase.js"
 import { useState, useEffect } from 'react';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
 
 const Portfolio = () => {
-	const [portfolio, setPortfolio] = useState(null)
+	const [portfolios, setPortfolio] = useState(null)
 
 	const getPortfolio = async () => {
 		const db = getFirestore(app);
@@ -30,10 +28,10 @@ const Portfolio = () => {
 				<div className="flex justify-between items-center mb-5">
 					<h6 className="text-md font-medium">Some of My Recent Projects <i className="lnr lnr-arrow-down ml-1 text-green-500 font-bold"></i></h6>
 				</div>
-				{portfolio ? (
+				{portfolios ? (
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-7">
-						{portfolio .map((item) => 
-							<CardPortfolio image={item.image} title={item.title} description={item.description} link={item.link}/>
+						{portfolios.map((item, index) => 
+							<CardPortfolio key={index} image={item.image} title={item.title} description={item.description} link={item.link}/>
 						)}
 					</div>
 				) : (
