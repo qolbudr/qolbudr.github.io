@@ -16,7 +16,8 @@ const Quotes = () => {
 
 	useEffect(() => {
 	  getQuotes();
-	}, []);
+	});
+
 	return (
 		<div className="mb-10 py-5 px-5 md:px-16 lg:px-28">
 			<div className="bg-stone-900 p-10 md:py-24 md:p-16 text-white">

@@ -3,9 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Contact from '../components/Contact.astro';
 import Navbar from '../components/Navbar.astro';
-import Portfolio from '../components/Portfolio.astro';
 import HorizontalBlog from '../components/HorizontalBlog.astro';
 import Quotes from '../components/section/Quotes.jsx'
+import Portfolio from '../components/section/Portfolio.jsx'
 ---
 
 <Layout title="qolbudr | Qolbu Dzikru Portofolio - Mobile and Web Developer">
@@ -151,19 +151,7 @@ import Quotes from '../components/section/Quotes.jsx'
 				</div>
 			</div>
 		</div>
-		<div class="mb-10 px-5 md:px-16 lg:px-28">
-			<div class="py-10 px-10 md:py-24 md:px-36 md:pb-36 border border-slate-300">
-				<div class="flex justify-between items-center mb-5">
-					<h6 class="text-md font-medium">Some of My Recent Projects <i class="lnr lnr-arrow-down ml-1 text-green-500 font-bold"></i></h6>
-				</div>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-7">
-					<Portfolio/>
-					<Portfolio/>
-					<Portfolio/>
-					<Portfolio/>
-				</div>
-			</div>
-		</div>
+		<Portfolio client:visible/>
 		<div class="mb-10 py-5 px-5 md:px-16 lg:px-28">
 			<div class="inline-flex relative">
 				<h1 class="text-4xl leading-tight">Wanna <br> read <strong>Something ?</strong></h1>
