@@ -1,5 +1,5 @@
 const CardPortfolio = (props) => {
-	if(props.isLoading == true)
+	if(props.isLoading)
 		return (
 			<div className="portfolio-wrap mb-5 animate-pulse">
 				<div className="flex justify-center items-center w-full h-48 md:h-64 bg-gray-300 dark:bg-gray-700">
@@ -19,7 +19,7 @@ const CardPortfolio = (props) => {
 				</div>
 			</div>
 		)
-	
+
 	return (
 		<div className="portfolio-wrap mb-5">
 			<img src={props.image} className="w-full"/>
