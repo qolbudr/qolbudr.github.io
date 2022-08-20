@@ -11,7 +11,7 @@ import Blog from '../components/section/Blog.jsx'
 <Layout title="qolbudr | Qolbu Dzikru Portofolio - Mobile and Web Developer">
 	<main>
 		<Navbar/>
-		<div class="mb-16 py-5 px-5 md:px-16 lg:px-28" style="margin-top: 80px">
+		<div class="mb-16 py-5 px-5 md:px-16 lg:px-28">
 			<div class="flex flex-col md:flex-row flex-basis items-center justify-between gap-10 lg:gap-40">
 				<div class="basis-full md:basis-1/2">
 					<div class="greeting">
@@ -62,7 +62,7 @@ import Blog from '../components/section/Blog.jsx'
 			</div>
 		</div>
 		<Quotes client:visible/>
-		<div class="mb-10 py-5 px-5 md:px-16 lg:px-28">
+		<div id="resume" class="mb-10 py-5 px-5 md:px-16 lg:px-28">
 			<h1 class="text-4xl leading-tight">Someone say you need to <br> attach your <strong>Resume</strong> to <br> <strong>attract</strong> customer</h1>
 			<div class="mt-7 inline-flex relative">
 				<h3 class="text-xl font-bold">So here is my resume</h3>
@@ -177,7 +177,7 @@ import Blog from '../components/section/Blog.jsx'
 				</div>
 			</div>
 		</div>
-		<div class="py-5 px-5 md:px-16 lg:px-28">
+		<div id="contact" class="py-5 px-5 md:px-16 lg:px-28">
 			<div class="flex flex-col-reverse md:flex-row flex-basis items-center justify-center md:justify-between text-center md:text-left">
 				<h5>© Qolbu Dzikru Rosyadi 2021 All rights Reserved</h5>
 				<div class="p-5 text-lg flex items-center">
@@ -200,6 +200,10 @@ import Blog from '../components/section/Blog.jsx'
 </Layout>
 
 <style>
+	html {
+		scroll-behavior: smooth;
+	}
+
 	main {
 		font-family: 'Poppins', sans-serrif;
 	}

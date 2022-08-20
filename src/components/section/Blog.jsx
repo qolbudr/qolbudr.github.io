@@ -26,7 +26,7 @@ const Blog = () => {
 	}, []);
 
 	return (
-		<div className="mb-10 py-5 px-5 md:px-16 lg:px-28">
+		<div id="blog" className="mb-10 py-5 px-5 md:px-16 lg:px-28">
 			<div className="inline-flex relative">
 				<h1 className="text-4xl leading-tight">Wanna <br/> read <strong>Something ?</strong></h1>
 				<div className="absolute w-100 -bottom-5 left-0 right-0">

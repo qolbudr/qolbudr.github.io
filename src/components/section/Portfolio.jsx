@@ -33,7 +33,7 @@ const Portfolio = () => {
 	}, []);
 
 	return (
-		<div className="mb-10 px-5 md:px-16 lg:px-28">
+		<div id="portfolio" className="mb-10 px-5 md:px-16 lg:px-28">
 			<div className="py-10 px-10 md:py-24 md:px-36 md:pb-36 border border-slate-300">
 				<div className="flex justify-between items-center mb-5">
 					<h6 className="text-md font-medium">Some of My Recent Projects <i className="lnr lnr-arrow-down ml-1 text-green-500 font-bold"></i></h6>
