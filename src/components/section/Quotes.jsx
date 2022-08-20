@@ -7,14 +7,14 @@ const Quotes = () => {
 
 	const getQuotes = async () => {
 		const db = getFirestore(app);
-		const docSnapshot = await getDoc(doc(db, "quotes", "js875UPHsa6al6HABmaQ"));
+		const docSnapshot = await getDoc(doc(db, "quotes", "FhESg7KUcqmdrnAADNp6"));
 		const data = docSnapshot.data()
 		setQuotes(data.text)
 	}
 
 	useEffect(() => {
 	  getQuotes();
-	});
+	}, []);
 
 	return (
 		<div className="mb-10 py-5 px-5 md:px-16 lg:px-28">
