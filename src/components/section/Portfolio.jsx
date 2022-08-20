@@ -1,6 +1,5 @@
 import { getFirestore, collection, getDocs, query, orderBy } from "firebase/firestore";
 import CardPortfolio from './CardPortfolio'
-import CardPortfolioSkeleton from './CardPortfolioSkeleton'
 import { app } from "../../utils/firebase.js"
 import { useState, useEffect } from 'react';
 import { shuffleArray } from '../../utils/shuffle.js'
@@ -56,10 +55,10 @@ const Portfolio = () => {
 					</div>
 				) : (
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-7">
-						<CardPortfolioSkeleton/>
-						<CardPortfolioSkeleton/>
-						<CardPortfolioSkeleton/>
-						<CardPortfolioSkeleton/>
+						<CardPortfolio isLoading={true}/>
+						<CardPortfolio isLoading={true}/>
+						<CardPortfolio isLoading={true}/>
+						<CardPortfolio isLoading={true}/>
 					</div>
 				)}
 			</div>
