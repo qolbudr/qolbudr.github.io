@@ -38,7 +38,7 @@ const Blog = () => {
 			<div className="flex flex-col md:flex-row flex-basis items-start justify-between mt-20 gap-20">
 				{blogs ? (
 					<div className="basis-full md:basis-1/2">
-						<a href={ 'https://qolbudr.github.io/blog/' + createSlug(blogs[0]) }>
+						<a href={ '/blog/' + createSlug(blogs[0]) }>
 							<img src={blogs[0].image} style={{height: 'auto', maxHeight: '300px', objectFit: 'cover'}} className="w-full"/>
 							<div className="blog-details mt-3">
 								<div className="flex mb-3 items-center gap-2">

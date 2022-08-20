@@ -19,7 +19,7 @@ const HorizontalBlog = (props) => {
 		)
 
 	return (
-		<a href={'https://qolbudr.github.io/blog/' + createSlug(props.item)}>
+		<a href={'/blog/' + createSlug(props.item)}>
 			<div className="flex items-start gap-5 mb-3">
 				<img src={props.image} className="h-32 w-32 md:h-24 md:w-auto" style={{objectFit: 'cover'}} alt="blog"/>
 				<div className="blog-details">
