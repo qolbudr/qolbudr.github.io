@@ -1,0 +1,74 @@
+---
+import { createSlug } from '../../utils/slug.js'
+import { getFirestore, collection, getDocs, query, orderBy } from "firebase/firestore";
+import { app } from "../../utils/firebase.js"
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import HorizontalBlog from "../../components/section/HorizontalBlog"
+
+export async function getStaticPaths() {
+	const db = getFirestore(app);
+	const docsSnapshot = await getDocs(query(collection(db, "blog"), orderBy('timestamp', 'desc')));
+	let array = []
+	docsSnapshot.forEach((doc) => {
+		array.push({...doc.data(), id: doc.id})
+	})
+
+	return array.map((item) => {
+		return {
+			params: { slug: createSlug(item) },
+			props: { title: item.title, image: item.image, readTime: item.readTime, category: item.category, content: item.content }
+		}
+	})
+}
+
+const { title, image, readTime, category, content } = Astro.props;
+---
+
+<Layout title={ "qolbudr | " + title }>
+	<main>
+		<Navbar/>
+		<div class="mb-16 py-5 px-5 md:px-16 lg:px-28">
+			<div class="flex flex-col md:flex-row flex-basis items-start justify-between w-full">
+				<div class="basis-full md:basis-2/3">
+					<div class="blog-image mb-3">
+						<img style="width: 100%; max-height: 500px; object-fit:cover" src={ image }>
+					</div>
+					<div class="flex items-center mb-3 gap-2">
+						<div class="bg-green-500 text-white text-sm p-1 px-3 rounded-sm">{category}</div>
+						<h5 class="text-sm m-0">• {readTime}</h5>
+					</div>
+					<div class="blog-title mb-3">
+						<h3 class="text-3xl font-semibold">{ title }</h3>
+					</div>
+					<div class="blog-content">
+						<Fragment set:html={content}/>
+					</div>
+				</div>
+				<div class="w-full mt-10 md:mt-0 md:w-1/4 relative md:top-16 md:pt-5 md:h-screen md:fixed md:right-16 lg:right-28 pl-0 md:pl-5 md:border-l-2 md:border-l-slate-200">
+					<div class="author">
+						<h4 class="mb-5 uppercase font-bold ">Author</h4>
+						<div class="flex items-center gap-2">
+							<div class="w-10 h-10 border border-green-500 rounded-full flex items-center justify-center">
+								<i class="ti ti-user"></i>
+							</div>
+							<h5 class="text-lg">qolbudr</h5>
+						</div>
+						<h6 class="mt-5 text-sm text-justify">Post saya berguna ? saya pikir tidak, kenapa anda membacanya, tidak kah anda pikir membaca nya sia sia dan buang waktu</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
+
+	main {
+		font-family: 'Poppins', sans-serrif;
+	}
+</style>
+
