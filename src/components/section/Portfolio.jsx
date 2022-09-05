@@ -17,14 +17,14 @@ const Portfolio = () => {
 		})
 
 		setPortfolio(array)
-		setDisplay(array.slice(0, 3));
+		setDisplay(array.slice(0, 4));
 	}
 
 	const shufflePortfolio = async () => {
 		setDisplay(null)
 		setTimeout(() => {
 			const newArray = shuffleArray(portfolios)
-			setDisplay(newArray.slice(0, 3))
+			setDisplay(newArray.slice(0, 4))
 		}, 2000)
 	}
 
