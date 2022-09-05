@@ -34,14 +34,14 @@ const Portfolio = () => {
 
 	return (
 		<div id="portfolio" className="mb-10 px-5 md:px-16 lg:px-28">
-			<div className="py-10 px-10 md:py-24 md:px-36 md:pb-36 border border-slate-300">
+			<div className="py-8 px-8 md:py-24 md:px-36 md:pb-36 border border-slate-300">
 				<div className="flex justify-between items-center mb-5">
 					<h6 className="text-md font-medium">Some of My Recent Projects <i className="lnr lnr-arrow-down ml-1 text-green-500 font-bold"></i></h6>
 					{display ? (
-						<button onClick={shufflePortfolio} className="border border-stone-300 px-5 py-2 rounded-full text-xs">View More</button>
+						<button onClick={shufflePortfolio} className="border border-stone-300 px-7 py-2 rounded-full text-xs">More</button>
 					) : (
-						<button className="gap-1 border border-stone-300 px-5 py-2 rounded-full text-xs flex items-center">
-							View More
+						<button className="gap-1 border border-stone-300 px-7 py-2 rounded-full text-xs flex items-center">
+							More
 							<div className="lnr lnr-sync animate-spin"></div>
 						</button>
 					)}

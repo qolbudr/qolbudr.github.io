@@ -16,4 +16,36 @@
 			<Contact/>
 		</div>
 	</div>
+	<div class="basis-1/2 block lg:invisibile lg:hidden text-right">
+		<i id="menu" class="ti ti-menu"></i>
+	</div>
 </div>
+<div id="mobile-menu" style="height: 250px; top: -250px; transition: 0.7s ease-in-out" class="fixed shadow bg-slate-100 left-0 right-0 px-5 py-5 z-10">
+	<ul class="list-unstyled">
+		<li class="mb-3"><a href="#">About</a></li>
+		<li class="mb-3"><a href="#resume">Resume</a></li>
+		<li class="mb-3"><a href="#portfolio">Portfolio</a></li>
+		<li class="mb-3"><a href="#blog">Blog</a></li>
+		<li><Contact/></li>
+	</ul>
+</div>
+
+<script>
+	const menu = document.querySelector('#menu')
+	const mobileMenu = document.querySelector('#mobile-menu')
+
+	menu.addEventListener('click', () => {
+		if(menu.classList.contains('ti-menu'))
+		{
+			menu.classList.remove('ti-menu')
+			menu.classList.add('ti-close')
+			mobileMenu.style.top = '65px'
+		}
+		else
+		{
+			menu.classList.remove('ti-close')
+			menu.classList.add('ti-menu')
+			mobileMenu.style.top = '-300px'
+		}
+	})
+</script>
