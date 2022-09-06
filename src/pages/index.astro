@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar.astro';
 import Quotes from '../components/section/Quotes.jsx'
 import Portfolio from '../components/section/Portfolio.jsx'
 import Blog from '../components/section/Blog.jsx'
+import ContactForm from '../components/section/ContactForm.jsx'
 ---
 
 <Layout title="qolbudr | Qolbu Dzikru Portofolio - Mobile and Web Developer">
@@ -153,30 +154,7 @@ import Blog from '../components/section/Blog.jsx'
 		</div>
 		<Portfolio client:visible/>
 		<Blog client:visible/>
-		<div class="mb-10 py-5 px-0 md:px-16 lg:px-28">
-			<div class="bg-stone-900 p-10 md:py-24 md:p-16 text-white">
-				<div class="w-full gap-10 md:gap-20 px-0 md:px-10 flex flex-col md:flex-row flex-basis items-center justify-center">
-					<div class="basis-full md:basis-1/2">
-						<h2 class="text-2xl text-green-500 font-bold">Get in Touch</h2>
-						<h5 class="text-lg text-slate-300 my-3">Why waiting so long ? Talk to me about your project and make it real now!</h5>
-						<h5 class="text-lg text-green-500 fonr-medium">Let's Connect</h5>
-					</div>
-					<div class="basis-full md:basis-1/2">
-						<div class="flex flex-col md:flex-row flex-basis items-center gap-2 mb-2">
-							<div class="basis-full md:basis-1/2 w-full">
-								<input type="text" placeholder="Name" class="w-full py-4 px-5 bg-slate-300">
-							</div>
-							<div class="basis-full md:basis-1/2 w-full">
-								<input type="email" placeholder="Email" class="w-full py-4 px-5 bg-slate-300">
-							</div>
-						</div>
-						<input type="text" placeholder="Subject" class="py-4 px-5 bg-slate-300 mb-2 w-full">
-						<textarea type="text" placeholder="Message" class="py-4 px-5 bg-slate-300 w-full" rows="5"></textarea>
-						<button class="bg-green-500 w-full text-white py-4 px-5">Send Message</button>
-					</div>
-				</div>
-			</div>
-		</div>
+		<ContactForm client:visible/>
 		<div id="contact" class="py-5 px-5 md:px-16 lg:px-28">
 			<div class="flex flex-col-reverse md:flex-row flex-basis items-center justify-center md:justify-between text-center md:text-left">
 				<h5>© Qolbu Dzikru Rosyadi 2022 All rights Reserved</h5>
