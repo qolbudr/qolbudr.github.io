@@ -1,107 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<link rel="icon" type="image/x-icon" href="/favicon.ico">
-		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-		<meta name="generator" content="Astro v1.9.2">
-		<title>qolbudr | Cara menjalankan aplikasi Flutter di device tanpa USB</title>
-	<link rel="stylesheet" href="/assets/_slug_.08937348.css" />
-<link rel="stylesheet" href="/assets/_slug_.0d2a4cb3.css" /><script type="module">const e=document.querySelector("#menu"),s=document.querySelector("#mobile-menu");e.addEventListener("click",()=>{e.classList.contains("ti-menu")?(e.classList.remove("ti-menu"),e.classList.add("ti-close"),s.style.top="65px"):(e.classList.remove("ti-close"),e.classList.add("ti-menu"),s.style.top="-300px")});
-</script></head>
-	<body class="bg-slate-100">
-		<main class="astro-HLN2BXLH">
-		<div class="w-100 py-5 px-5 md:px-16 xl:px-28 flex flex-basis items-center justify-between sticky top-0 left-0 right-0 bg-slate-100 z-20">
-	<div class="basis-full md:basis-1/2">
-		<div class="logo flex items-center">
-	<div class="relative">
-		<a href="/">
-			<h3 class="font-semibold text-xl text-green-500">
-				qolbu
-			</h3>
-			<div class="absolute bg-green-500 h-0.5 left-0 right-1"></div>
-		</a>
-	</div>
-	<h3 class="text-black text-lg font-normal">dr</h3>
-</div>
-	</div>
-	<div class="basis-1/2 invisible hidden lg:visible lg:block">
-		<div class="flex text-sm items-center justify-between">
-			<a href="#">About</a>
-			<a href="#resume">Resume</a>
-			<a href="#portfolio">Portfolio</a>
-			<a href="#blog">Blog</a>
-			<a href="#contact">
-	<div class="flex items-center">
-			<div class="relative">
-				<p>Contact</p>
-				<div class="left-0 right-0 h-px bg-black"></div>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+	<meta name="generator" content="Astro v1.9.2">
+	<title>qolbudr | Cara menjalankan aplikasi Flutter di device tanpa USB</title>
+	<link rel="stylesheet" href="/assets/blog-_slug_-index.08937348.css" />
+	<link rel="stylesheet" href="/assets/blog-_slug_.0d2a4cb3.css" />
+	<script type="module">const e = document.querySelector("#menu"), s = document.querySelector("#mobile-menu"); e.addEventListener("click", () => { e.classList.contains("ti-menu") ? (e.classList.remove("ti-menu"), e.classList.add("ti-close"), s.style.top = "65px") : (e.classList.remove("ti-close"), e.classList.add("ti-menu"), s.style.top = "-300px") });
+	</script>
+</head>
+
+<body class="bg-slate-100">
+	<main class="astro-HLN2BXLH">
+		<div
+			class="w-100 py-5 px-5 md:px-16 xl:px-28 flex flex-basis items-center justify-between sticky top-0 left-0 right-0 bg-slate-100 z-20">
+			<div class="basis-full md:basis-1/2">
+				<div class="logo flex items-center">
+					<div class="relative">
+						<a href="/">
+							<h3 class="font-semibold text-xl text-green-500">
+								qolbu
+							</h3>
+							<div class="absolute bg-green-500 h-0.5 left-0 right-1"></div>
+						</a>
+					</div>
+					<h3 class="text-black text-lg font-normal">dr</h3>
+				</div>
 			</div>
-			<div class="ml-5 flex text-center justify-center text-green-500 items-center w-8 h-8 bg-transparent border-2 border-solid rounded-full border-green-500">
-				<i class="lnr lnr-arrow-right -rotate-45"></i>
+			<div class="basis-1/2 invisible hidden lg:visible lg:block">
+				<div class="flex text-sm items-center justify-between">
+					<a href="#">About</a>
+					<a href="#resume">Resume</a>
+					<a href="#portfolio">Portfolio</a>
+					<a href="#blog">Blog</a>
+					<a href="#contact">
+						<div class="flex items-center">
+							<div class="relative">
+								<p>Contact</p>
+								<div class="left-0 right-0 h-px bg-black"></div>
+							</div>
+							<div
+								class="ml-5 flex text-center justify-center text-green-500 items-center w-8 h-8 bg-transparent border-2 border-solid rounded-full border-green-500">
+								<i class="lnr lnr-arrow-right -rotate-45"></i>
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
-	</div>
-</a>
+			<div class="basis-1/2 block lg:invisibile lg:hidden text-right">
+				<i id="menu" class="ti ti-menu"></i>
+			</div>
 		</div>
-	</div>
-	<div class="basis-1/2 block lg:invisibile lg:hidden text-right">
-		<i id="menu" class="ti ti-menu"></i>
-	</div>
-</div>
-<div id="mobile-menu" style="height: 250px; top: -250px; transition: 0.7s ease-in-out" class="fixed shadow bg-slate-100 left-0 right-0 px-5 py-5 z-10">
-	<ul class="list-unstyled">
-		<li class="mb-3"><a href="#">About</a></li>
-		<li class="mb-3"><a href="#resume">Resume</a></li>
-		<li class="mb-3"><a href="#portfolio">Portfolio</a></li>
-		<li class="mb-3"><a href="#blog">Blog</a></li>
-		<li><a href="#contact">
-	<div class="flex items-center">
-			<div class="relative">
-				<p>Contact</p>
-				<div class="left-0 right-0 h-px bg-black"></div>
-			</div>
-			<div class="ml-5 flex text-center justify-center text-green-500 items-center w-8 h-8 bg-transparent border-2 border-solid rounded-full border-green-500">
-				<i class="lnr lnr-arrow-right -rotate-45"></i>
-			</div>
-	</div>
-</a></li>
-	</ul>
-</div>
+		<div id="mobile-menu" style="height: 250px; top: -250px; transition: 0.7s ease-in-out"
+			class="fixed shadow bg-slate-100 left-0 right-0 px-5 py-5 z-10">
+			<ul class="list-unstyled">
+				<li class="mb-3"><a href="#">About</a></li>
+				<li class="mb-3"><a href="#resume">Resume</a></li>
+				<li class="mb-3"><a href="#portfolio">Portfolio</a></li>
+				<li class="mb-3"><a href="#blog">Blog</a></li>
+				<li><a href="#contact">
+						<div class="flex items-center">
+							<div class="relative">
+								<p>Contact</p>
+								<div class="left-0 right-0 h-px bg-black"></div>
+							</div>
+							<div
+								class="ml-5 flex text-center justify-center text-green-500 items-center w-8 h-8 bg-transparent border-2 border-solid rounded-full border-green-500">
+								<i class="lnr lnr-arrow-right -rotate-45"></i>
+							</div>
+						</div>
+					</a></li>
+			</ul>
+		</div>
 
 
 		<div class="mb-16 py-5 px-5 md:px-16 lg:px-28 astro-HLN2BXLH">
 			<div class="flex flex-col md:flex-row flex-basis items-start justify-between w-full astro-HLN2BXLH">
 				<div class="basis-full md:basis-2/3 astro-HLN2BXLH">
 					<div class="blog-image mb-3 astro-HLN2BXLH">
-						<img style="width: 100%; max-height: 500px; object-fit:cover" src="https://firebasestorage.googleapis.com/v0/b/github-pages-test.appspot.com/o/blog%2Fflutter_development.jpg?alt=media&#38;token=ea933beb-5a45-441d-a00f-e40e19e10992" class="astro-HLN2BXLH">
+						<img style="width: 100%; max-height: 500px; object-fit:cover"
+							src="https://firebasestorage.googleapis.com/v0/b/github-pages-test.appspot.com/o/blog%2Fflutter_development.jpg?alt=media&#38;token=ea933beb-5a45-441d-a00f-e40e19e10992"
+							class="astro-HLN2BXLH">
 					</div>
 					<div class="flex items-center mb-3 gap-2 astro-HLN2BXLH">
 						<div class="bg-green-500 text-white text-sm p-1 px-3 rounded-sm astro-HLN2BXLH">Tips</div>
 						<h5 class="text-sm m-0 astro-HLN2BXLH">• 3 min</h5>
 					</div>
 					<div class="blog-title mb-3 astro-HLN2BXLH">
-						<h3 class="text-3xl font-semibold astro-HLN2BXLH">Cara menjalankan aplikasi Flutter di device tanpa USB</h3>
+						<h3 class="text-3xl font-semibold astro-HLN2BXLH">Cara menjalankan aplikasi Flutter di device
+							tanpa USB</h3>
 					</div>
 					<div class="blog-content astro-HLN2BXLH">
-						<p style="text-align:justify">Menjalankan aplikasi flutter pada real device biasanya menggunakan kabel USB sebagai media penghubung antara komputer dan android device, dalam tutorial ini akan menunjukan cara agar deployment bisa berjalan pada real devices namun tanpa menggunakan kabel USB.</p>  <p style="text-align:justify">&nbsp;</p>  <h3 style="text-align:justify"><strong>🛠 Persiapan</strong></h3>  <p>&nbsp;</p>  <ul class="list-disc" style="padding-left: 20px"> 	<li style="text-align:justify">USB kabel (lho kok pake USB kabel, tenang cuman sekali doang kok)</li> 	<li style="text-align:justify">Smartphone / Android Devices</li> 	<li style="text-align:justify">Komputer</li> 	<li style="text-align:justify">Kopi biar santuy</li> </ul>  <p style="text-align:justify">&nbsp;</p>  <p style="text-align:justify">Pastikan komputer anda sudah terinstall flutter dan adb dan pernah melakukan deployment pada real devices sebelumnya. Tutorial ini hanya berlaku bagi anda yang telah terbiasa melakukan development mobile apps menggunakan flutter.</p>  <p style="text-align:justify">&nbsp;</p>  <h3 style="text-align:justify"><strong>💡 Langkah - Langkah</strong></h3>  <p>&nbsp;</p>  <ol class="list-disc" style="padding-left: 20px"> 	<li style="text-align:justify">Tancapkan USB kabel ke komputer dan juga smartphone</li> 	<li style="text-align:justify">Pastikan komputer dan smartphone anda berada dalam satu jaringan</li> 	<li style="text-align:justify">Pastikan anda telah menyalakan USB Debugging di smartphone</li> 	<li style="text-align:justify">Buka command prompt dengan cara (Win + R), lalu ketik &quot;cmd&quot;, lalu enter</li> 	<li style="text-align:justify">Ketik command berikut&nbsp;<span style="font-family:Courier New,Courier,monospace">adb tcpip 5555</span></li> 	<li style="text-align:justify">Cek ip address pada smartphone android anda</li> 	<li style="text-align:justify">Lepaskan kabel USB dari komputer dan smartphone</li> 	<li style="text-align:justify">Ketik command berikut untuk menghubungkan koneksi adb ke smartphone&nbsp;<span style="font-family:Courier New,Courier,monospace">adb connect &lt;smartphone_ip_address&gt;:5555</span></li> 	<li style="text-align:justify">Selamat smartphone dan komputer anda telah terhubung. Anda dapat melakukan deployment seperti biasa</li> </ol>  <p style="text-align:justify">&nbsp;</p>  <p style="text-align:justify">Pusing ? saya juga. tenang anda pasti bisa, kalau tidak bisa berarti wajar karena anda masih noob atau kasarannya bodoh. wkwkkwkw</p>
+						<p style="text-align:justify">Menjalankan aplikasi flutter pada real device biasanya menggunakan
+							kabel USB sebagai media penghubung antara komputer dan android device, dalam tutorial ini
+							akan menunjukan cara agar deployment bisa berjalan pada real devices namun tanpa menggunakan
+							kabel USB.</p>
+						<p style="text-align:justify">&nbsp;</p>
+						<h3 style="text-align:justify"><strong>🛠 Persiapan</strong></h3>
+						<p>&nbsp;</p>
+						<ul class="list-disc" style="padding-left: 20px">
+							<li style="text-align:justify">USB kabel (lho kok pake USB kabel, tenang cuman sekali doang
+								kok)</li>
+							<li style="text-align:justify">Smartphone / Android Devices</li>
+							<li style="text-align:justify">Komputer</li>
+							<li style="text-align:justify">Kopi biar santuy</li>
+						</ul>
+						<p style="text-align:justify">&nbsp;</p>
+						<p style="text-align:justify">Pastikan komputer anda sudah terinstall flutter dan adb dan pernah
+							melakukan deployment pada real devices sebelumnya. Tutorial ini hanya berlaku bagi anda yang
+							telah terbiasa melakukan development mobile apps menggunakan flutter.</p>
+						<p style="text-align:justify">&nbsp;</p>
+						<h3 style="text-align:justify"><strong>💡 Langkah - Langkah</strong></h3>
+						<p>&nbsp;</p>
+						<ol class="list-disc" style="padding-left: 20px">
+							<li style="text-align:justify">Tancapkan USB kabel ke komputer dan juga smartphone</li>
+							<li style="text-align:justify">Pastikan komputer dan smartphone anda berada dalam satu
+								jaringan</li>
+							<li style="text-align:justify">Pastikan anda telah menyalakan USB Debugging di smartphone
+							</li>
+							<li style="text-align:justify">Buka command prompt dengan cara (Win + R), lalu ketik
+								&quot;cmd&quot;, lalu enter</li>
+							<li style="text-align:justify">Ketik command berikut&nbsp;<span
+									style="font-family:Courier New,Courier,monospace">adb tcpip 5555</span></li>
+							<li style="text-align:justify">Cek ip address pada smartphone android anda</li>
+							<li style="text-align:justify">Lepaskan kabel USB dari komputer dan smartphone</li>
+							<li style="text-align:justify">Ketik command berikut untuk menghubungkan koneksi adb ke
+								smartphone&nbsp;<span style="font-family:Courier New,Courier,monospace">adb connect
+									&lt;smartphone_ip_address&gt;:5555</span></li>
+							<li style="text-align:justify">Selamat smartphone dan komputer anda telah terhubung. Anda
+								dapat melakukan deployment seperti biasa</li>
+						</ol>
+						<p style="text-align:justify">&nbsp;</p>
+						<p style="text-align:justify">Pusing ? saya juga. tenang anda pasti bisa, kalau tidak bisa
+							berarti wajar karena anda masih noob atau kasarannya bodoh. wkwkkwkw</p>
 					</div>
 				</div>
-				<div class="w-full mt-10 md:mt-0 md:w-1/4 relative md:top-16 md:pt-5 md:h-screen md:fixed md:right-16 lg:right-28 pl-0 md:pl-5 md:border-l-2 md:border-l-slate-200 astro-HLN2BXLH">
+				<div
+					class="w-full mt-10 md:mt-0 md:w-1/4 relative md:top-16 md:pt-5 md:h-screen md:fixed md:right-16 lg:right-28 pl-0 md:pl-5 md:border-l-2 md:border-l-slate-200 astro-HLN2BXLH">
 					<div class="author astro-HLN2BXLH">
 						<h4 class="mb-5 uppercase font-bold  astro-HLN2BXLH">Author</h4>
 						<div class="flex items-center gap-2 astro-HLN2BXLH">
-							<div class="w-10 h-10 border border-green-500 rounded-full flex items-center justify-center astro-HLN2BXLH">
+							<div
+								class="w-10 h-10 border border-green-500 rounded-full flex items-center justify-center astro-HLN2BXLH">
 								<i class="ti ti-user astro-HLN2BXLH"></i>
 							</div>
 							<h5 class="text-lg astro-HLN2BXLH">qolbudr</h5>
 						</div>
-						<h6 class="mt-5 text-sm text-justify astro-HLN2BXLH">Post saya berguna ? saya pikir tidak, kenapa anda membacanya, tidak kah anda pikir membaca nya sia sia dan buang waktu</h6>
+						<h6 class="mt-5 text-sm text-justify astro-HLN2BXLH">Post saya berguna ? saya pikir tidak,
+							kenapa anda membacanya, tidak kah anda pikir membaca nya sia sia dan buang waktu</h6>
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-	</body></html>
+</body>
 
+</html>
